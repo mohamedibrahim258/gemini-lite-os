@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000000 /* GeminiLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000000 /* GeminiLiteApp.swift */; };
+		B00000000000000000000001 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* ChatMessage.swift */; };
+		B00000000000000000000002 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* AppSettings.swift */; };
+		B00000000000000000000003 /* GeminiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* GeminiAPI.swift */; };
+		B00000000000000000000004 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* GeminiService.swift */; };
+		B00000000000000000000005 /* SlateTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* SlateTheme.swift */; };
+		B00000000000000000000006 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* ChatView.swift */; };
+		B00000000000000000000007 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* MessageBubbleView.swift */; };
+		B00000000000000000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* SettingsView.swift */; };
+		B00000000000000000000009 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* ImagePicker.swift */; };
+		B0000000000000000000000A /* QuickPromptBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000A /* QuickPromptBar.swift */; };
+		B00000000000000000000080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000080 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		P000000000000000000000001 /* GeminiLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeminiLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000000 /* GeminiLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiLiteApp.swift; sourceTree = "<group>"; };
+		F00000000000000000000001 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* GeminiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiAPI.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* SlateTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlateTheme.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F0000000000000000000000A /* QuickPromptBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPromptBar.swift; sourceTree = "<group>"; };
+		F00000000000000000000080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F00000000000000000000099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000002 /* GeminiLite */,
+				000000000000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P000000000000000000000001 /* GeminiLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000002 /* GeminiLite */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000003 /* App */,
+				000000000000000000000004 /* Models */,
+				000000000000000000000005 /* Services */,
+				000000000000000000000006 /* Theme */,
+				000000000000000000000007 /* Views */,
+				F00000000000000000000080 /* Assets.xcassets */,
+				F00000000000000000000099 /* Info.plist */,
+			);
+			path = GeminiLite;
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000000 /* GeminiLiteApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000001 /* ChatMessage.swift */,
+				F00000000000000000000002 /* AppSettings.swift */,
+				F00000000000000000000003 /* GeminiAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000004 /* GeminiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000005 /* SlateTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000006 /* ChatView.swift */,
+				F00000000000000000000007 /* MessageBubbleView.swift */,
+				F00000000000000000000008 /* SettingsView.swift */,
+				F00000000000000000000009 /* ImagePicker.swift */,
+				F0000000000000000000000A /* QuickPromptBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		200000000000000000000001 /* GeminiLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00000000000000000000006 /* Build configuration list for PBXNativeTarget "GeminiLite" */;
+			buildPhases = (
+				100000000000000000000001 /* Sources */,
+				100000000000000000000002 /* Frameworks */,
+				100000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeminiLite;
+			productName = GeminiLite;
+			productReference = P000000000000000000000001 /* GeminiLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		300000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					200000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C00000000000000000000003 /* Build configuration list for PBXProject "GeminiLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ru,
+				Base,
+			);
+			mainGroup = 000000000000000000000001;
+			productRefGroup = 000000000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				200000000000000000000001 /* GeminiLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000080 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000000 /* GeminiLiteApp.swift in Sources */,
+				B00000000000000000000001 /* ChatMessage.swift in Sources */,
+				B00000000000000000000002 /* AppSettings.swift in Sources */,
+				B00000000000000000000003 /* GeminiAPI.swift in Sources */,
+				B00000000000000000000004 /* GeminiService.swift in Sources */,
+				B00000000000000000000005 /* SlateTheme.swift in Sources */,
+				B00000000000000000000006 /* ChatView.swift in Sources */,
+				B00000000000000000000007 /* MessageBubbleView.swift in Sources */,
+				B00000000000000000000008 /* SettingsView.swift in Sources */,
+				B00000000000000000000009 /* ImagePicker.swift in Sources */,
+				B0000000000000000000000A /* QuickPromptBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C00000000000000000000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeminiLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasil.geminilite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		C00000000000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeminiLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasil.geminilite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00000000000000000000003 /* Build configuration list for PBXProject "GeminiLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000001 /* Debug */,
+				C00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00000000000000000000006 /* Build configuration list for PBXNativeTarget "GeminiLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000004 /* Debug */,
+				C00000000000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 300000000000000000000001 /* Project object */;
+}
