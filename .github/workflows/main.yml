@@ -1,0 +1,49 @@
+name: Build Gemini Lite IPA
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build iOS IPA
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          xcodebuild -version
+
+      - name: Build App with Xcode
+        run: |
+          xcodebuild clean build \
+            -project GeminiLite.xcodeproj \
+            -scheme GeminiLite \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Package IPA
+        run: |
+          mkdir -p build/Payload
+          cp -r build/Build/Products/Release-iphoneos/GeminiLite.app build/Payload/
+          cd build
+          zip -r -9 GeminiLite.ipa Payload
+          ls -lh GeminiLite.ipa
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeminiLite-iOS-15-IPA
+          path: build/GeminiLite.ipa
+          retention-days: 30
